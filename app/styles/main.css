@@ -26,3 +26,9 @@
 #content-form label{
   display: none;
 }
+
+#slate {
+  width: 100%;
+  height: 315px;
+  background: pink;
+}
