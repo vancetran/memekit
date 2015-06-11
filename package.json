@@ -1,0 +1,31 @@
+{
+  "name": "meme",
+  "version": "0.0.1",
+  "description": "An elegant meme tool for a more civilized age.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vancetran/meme.git"
+  },
+  "keywords": [
+    "meme",
+    "generator"
+  ],
+  "author": "Vance Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vancetran/meme/issues"
+  },
+  "homepage": "https://github.com/vancetran/meme#readme",
+  "dependencies": {
+    "express": "^4.12.4",
+    "open": "0.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
