@@ -18,22 +18,11 @@ var app = angular.module('memekit')
   $scope.config = {
     sizes: [
       {
-        name: 'Facebook',
-        width: 800,
-        height: 370,
-      },
-      {
         name: 'Twitter',
         width: 650,
-        height: 320,
-      },
-      {
-        name: 'Video',
-        width: 640,
-        height: 360,
-      },
+        height: 320
+      }
     ],
-    // themes: themeConfig,
     output: {
       scale: 2,
       editable: {
@@ -51,99 +40,9 @@ var app = angular.module('memekit')
       },
       elements: [
         {
-          name: 'Background Colour',
-          type: 'rect',
-          height: function() {
-            return $scope.size.height;
-          },
-          width: function() {
-            return $scope.size.width;
-          },
-          fill: function() {
-            return $scope.theme.background;
-          },
-          editable: {
-            fill: 'picker'
-          }
-        },
-        {
-          name: 'Image',
-          type: 'image',
-          width: 600,
-          height: function() {
-            return this.width;
-          },
-          src: '',
-          opacity: 1,
-          x: '0%',
-          y: '0%',
-          preserveAspectRatio: 'xMinYMin meet',
-          draggable: true,
-          defaultFilter: '',
-          editable: {
-            src: true,
-            width: true,
-            opacity: true,
-            filters: [
-              'Sepia',
-              'Grayscale',
-              'Saturate',
-              'Invert',
-              'Blur'
-            ],
-          }
-        },
-        {
-          name: 'Logo',
-          type: 'image',
-          width: 250,
-          height: function() {
-            return this.width;
-          },
-          src: function() {
-            return $scope.theme.logoSrc;
-          },
-          opacity: 1,
-          x: 50,
-          y: 270,
-          preserveAspectRatio: 'xMinYMin meet',
-          editable: {
-            src: true,
-            width: true,
-          },
-          draggable: true
-        },
-        {
-          name: 'Credit',
-          type: 'text',
-          text: 'Credit: Insert name here',
-          fill: function() {
-            return $scope.theme.quote;
-          },
-          fontSize: 12,
-          fontFamily: function() {
-            return $scope.theme.headlineFont;
-          },
-          textAnchor: 'start',
-          x: 50,
-          y: 250,
-          draggable: true,
-          editable: {
-            text: true,
-            fontSize: {
-              'Small (12px)' : 12,
-              'Medium (18px)': 18,
-              'Large (22px)': 22,
-              'Extra Large (36px)': 36,
-            },
-            fill: 'picker',
-            textAnchor: true
-          },
-        },
-        {
           name: 'Headline',
           type: 'text',
-          text: 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the colour of the text too.',
+          text: 'Edit this text.',
           fill: function() {
             return $scope.theme.quote;
           },
@@ -166,11 +65,12 @@ var app = angular.module('memekit')
               'Extra Large (40px)': 40,
             },
           },
-        },
-      ],
+        }
+      ]
     }
-  };
 
+
+  };
 
 });
 

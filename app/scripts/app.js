@@ -35,14 +35,4 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 });
 
-// app.controller('MemekitController', function() {
-//   this.slate = meme;
-// });
-
-// var meme = {
-//   caption: 'Hello world.',
-//   source: 'Vance',
-//   target: 'twitter'
-// };
-
 })();

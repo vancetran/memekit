@@ -26,6 +26,16 @@
 #content-form label{
   display: none;
 }
+#content-form textarea{
+  width: 100%;
+}
+#content-form input{
+  width: 100%;
+}
+
+#snap-svg {
+  border: 1px solid red;
+}
 
 #slate {
   width: 100%;
