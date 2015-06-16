@@ -31,7 +31,8 @@ angular.module('memekit')
         console.log("log element: ");
         console.log(element);
 
-        s.text(0, 20, "Hello SVG");
+        var x = s.text(20, 40, "Hello SVG");
+        x.drag();
 
         var elementData = element;
 	      delete elementData.$$hashKey;
