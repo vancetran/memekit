@@ -26,11 +26,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       url: '/',
       controller: 'MainCtrl',
       templateUrl: 'views/main.html',
-      // resolve: {
-      //   themeConfig: function(themeConfigProvider) {
-      //     return themeConfigProvider;
-      //   }
-      // }
+      resolve: {
+        themeConfig: function(themeConfigProvider) {
+          return themeConfigProvider;
+        }
+      }
     });
 
 });

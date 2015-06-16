@@ -25,6 +25,9 @@ angular.module('memekit')
           width: '100%',
         });
 
+        var elementData = element;
+	      delete elementData.$$hashKey;
+
         // snapSVG.plugin(function(Snap, Element) {
         //   Element.prototype.altDrag = function() {
         //     this.drag(dragMove, dragStart, dragEnd);
