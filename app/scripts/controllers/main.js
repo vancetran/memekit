@@ -51,7 +51,7 @@ var app = angular.module('memekit')
         },
         elements: [
           {
-            name: 'Background Colour',
+            name: 'Background Color',
             type: 'rect',
             height: function() {
               return $scope.size.height;
