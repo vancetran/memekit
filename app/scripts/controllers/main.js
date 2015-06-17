@@ -178,13 +178,13 @@ var app = angular.module('memekit')
 
     if(typeof $scope.config.themes !== 'undefined') {
       $scope.theme = $scope.config.themes[0];
-      // comment out since theme selector not implemented
+      // @TODO: uncommented this once theme selector is added
       // $scope.theme = ($scope.config.themes.length > 1) ? null : $scope.config.themes[0];
     }
 
     $scope.size = $scope.config.sizes[0];
 
-    // comment out since theme switcher not implemented
+    // @TODO: uncommented this once theme selector is added
     // $scope.size = ($scope.config.sizes.length > 1) ? null : $scope.config.sizes[0];
 
     $scope.$watch('theme', function() {
