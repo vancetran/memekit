@@ -3,6 +3,12 @@
     <snap-svg svg-config="config.svg"></snap-svg>
     <button class="button" ng-click="downloadSvg()">Download Image</button>
     <button class="button" ng-click="resetSvg()">Reset</button>
+
+    <hr>
+    <div class="panel" ng-show="config.output.editable.scale">
+      <h3 ng-click="scale = !scale"><i class="fa fa-caret-down" ng-hide="scale"></i><i class="fa fa-caret-right" ng-hide="!scale"></i> Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
+      <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
+    </div>
   </div>
 
   <div class="pure-u-1 pure-u-md-1-3 l-box">
