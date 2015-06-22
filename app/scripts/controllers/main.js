@@ -96,7 +96,7 @@ var app = angular.module('memekit')
           {
             name: 'Logo',
             type: 'image',
-            width: 250,
+            width: 150,
             height: function() {
               return this.width;
             },
@@ -104,8 +104,8 @@ var app = angular.module('memekit')
               return $scope.theme.logoSrc;
             },
             opacity: 1,
-            x: 50,
-            y: 270,
+            x: 30,
+            y: 261,
             preserveAspectRatio: 'xMinYMin meet',
             editable: {
               src: true,
@@ -125,8 +125,8 @@ var app = angular.module('memekit')
               return $scope.theme.headlineFont;
             },
             textAnchor: 'start',
-            x: 50,
-            y: 250,
+            x: 30,
+            y: 240,
             draggable: true,
             editable: {
               text: true,
@@ -152,7 +152,7 @@ var app = angular.module('memekit')
               return $scope.theme.headlineFont;
             },
             textAnchor: 'start',
-            x: 50,
+            x: 30,
             y: 55,
             draggable: true,
             editable: {
