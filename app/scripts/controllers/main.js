@@ -242,17 +242,18 @@ var app = angular.module('memekit')
     };
 
     $scope.getFilename = function() {
-      var headlineArr = $scope.config.svg.elements;
+      var elements = $scope.config.svg.elements;
       var quote;
       // grab headline string
-      for (var x in headlineArr){
-        if(headlineArr[x].name === "Headline" ){
-          quote = headlineArr[x].text;
+      for (var x in elements){
+        if(elements[x].name === "Headline" ){
+          quote = elements[x].text;
+          break;
         }
       }
       // convert to array, limit to 5 words
       quote = quote.split(' ', 5);
-      // remove spare characters and add dashes
+      // join back to string, remove spare characters and replace spaces with dashes
       var filename = $scope.slugify( quote.join(' ') );
       return filename;
     };
