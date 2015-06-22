@@ -235,11 +235,33 @@ var app = angular.module('memekit')
       $scope.config.svg.elements[key].src = '';
     };
 
-
     $scope.downloadSvg = function() {
-      saveSvgAsPng(document.getElementById('snap-svg'), 'image.png', {
+      saveSvgAsPng(document.getElementById('snap-svg'), 'meme-'+ $scope.getFilename() +'.png', {
         scale: $scope.config.output.scale
       });
+    };
+
+    $scope.getFilename = function() {
+      var headlineArr = $scope.config.svg.elements;
+      var quote;
+      // grab headline string
+      for (var x in headlineArr){
+        if(headlineArr[x].name === "Headline" ){
+          quote = headlineArr[x].text;
+        }
+      }
+      // convert to array, limit to 5 words
+      quote = quote.split(' ', 5);
+      // remove spare characters and add dashes
+      var filename = $scope.slugify( quote.join(' ') );
+      return filename;
+    };
+
+    $scope.slugify = function(text) {
+      return text
+        .toLowerCase()
+        .replace(/[^\w ]+/g,'')
+        .replace(/ +/g,'-');
     };
   });
 
