@@ -5,6 +5,21 @@
     <button class="button" ng-click="resetSvg()">Reset</button>
 
     <hr>
+
+    <div class="panel" ng-show="config.sizes">
+        <h3>Dimensions <small>Choose your image output size</small></h3>
+        <select id="size" ng-model="size" ng-options="size.name for size in config.sizes" class="form-control" ng-hide="dimensions">
+          <option value="">-- Choose size --</option>
+        </select>
+      </div>
+
+      <div class="panel" ng-show="config.themes">
+        <h3>Theme <small>Choose the look and feel</small></h3>
+        <select id="theme" ng-model="theme" ng-options="theme.name for theme in config.themes" class="form-control" ng-hide="themes">
+          <option value="">-- Choose theme --</option>
+        </select>
+      </div>
+
     <div class="panel">
       <h3>Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
       <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
