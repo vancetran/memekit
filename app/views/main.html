@@ -5,8 +5,8 @@
     <button class="button" ng-click="resetSvg()">Reset</button>
 
     <hr>
-    <div class="panel" ng-show="config.output.editable.scale">
-      <h3 ng-click="scale = !scale"><i class="fa fa-caret-down" ng-hide="scale"></i><i class="fa fa-caret-right" ng-hide="!scale"></i> Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
+    <div class="panel">
+      <h3>Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
       <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
     </div>
   </div>
@@ -16,7 +16,7 @@
 
       <div ng-repeat="(key, element) in config.svg.elements" ng-if="element.editable" class="panel">
 
-        <h3 ng-click="show[key] = !show[key]"><i class="fa fa-caret-down" ng-hide="show[key]"></i><i class="fa fa-caret-right" ng-hide="!show[key]"></i> {{element.name}}</h3>
+        <h3>{{element.name}}</h3>
         <div ng-if="element.type !== 'group'" ng-repeat="(type, field) in element.editable" ng-switch="type" ng-hide="show[key]">
           <!-- Text -->
           <text-editor ng-switch-when="text" element="element"></text-editor>

@@ -243,14 +243,14 @@ var app = angular.module('memekit')
 
     $scope.getFilename = function() {
       var elements = $scope.config.svg.elements;
-      var quote;
+      var quote = '';
 
       // grab headline string
-      if(elements[4].name === "Headline" ){
+      if(elements[4].name === 'Headline' ){
         quote = elements[4].text;
       }else{
         for (var x in elements){
-          if(elements[x].name === "Headline" ){
+          if(elements[x].name === 'Headline' ){
             quote = elements[x].text;
             break;
           }
