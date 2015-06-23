@@ -3,6 +3,7 @@ app/bower_components
 !app/bower_components/saveSvgAsPng
 .grunt/
 .tmp/
+.sass_cache/
 build/
 
 # UC Specific stuff

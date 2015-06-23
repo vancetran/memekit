@@ -1,0 +1,46 @@
+@import "pure/base";
+@import "pure/grids";
+@import "pure/grids-responsive";
+@import "pure/forms";
+@import "pure/buttons";
+@import "pure/menus";
+
+
+#main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.l-box {
+  padding: .75em;
+}
+
+.home-menu {
+  background: #555;
+}
+.home-menu .pure-menu-heading {
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+  text-transform: none;
+}
+
+/*#content-form label{
+  display: none;
+}*/
+#content-form textarea{
+  width: 100%;
+  height: 75px;
+  resize: none;
+}
+#content-form input{
+  width: 100%;
+}
+
+#snap-svg {
+
+}
