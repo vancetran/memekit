@@ -26,7 +26,11 @@
     @extend .pure-u-1;
     @extend .pure-u-md-1-3;
     @extend .l-box;
-    
+
+  }
+
+  .pure-button {
+    border-radius: 5px;
   }
 
   button.primary {
@@ -35,6 +39,9 @@
   }
   button {
     @extend .pure-button;
+  }
+  button.reset {
+    float: right;
   }
 }
 .pure-g > div {

@@ -2271,6 +2271,12 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   display: block;
   margin-bottom: 10px;
 }
+#main .pure-button, #main button.primary, #main button {
+  border-radius: 5px;
+}
+#main button.reset {
+  float: right;
+}
 
 .pure-g > div, #main > div {
   box-sizing: border-box;

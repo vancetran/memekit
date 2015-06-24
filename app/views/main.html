@@ -2,9 +2,9 @@
   <div class="preview">
     <snap-svg svg-config="config.svg"></snap-svg>
     <button class="primary" ng-click="downloadSvg()">Download Image</button>
-    <button ng-click="resetSvg()">Reset</button>
+    <button class="reset" ng-click="resetSvg()">Reset</button>
 
-    <div class="panel" ng-show="config.sizes">
+      <div class="panel" ng-show="config.sizes">
         <h3>Dimensions <small>Choose your image output size</small></h3>
         <select id="size" ng-model="size" ng-options="size.name for size in config.sizes" class="form-control" ng-hide="dimensions">
           <option value="">-- Choose size --</option>
