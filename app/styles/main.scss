@@ -5,12 +5,26 @@
 @import "pure/buttons";
 @import "pure/menus";
 
+header {
+  .home-menu {
+    @extend .pure-menu;
+    @extend .pure-menu-horizontal;
+    background: #555;
+
+    .brand {
+      @extend .pure-menu-heading;
+      color: white;
+      font-weight: 400;
+      font-size: 120%;
+      text-transform: none;
+    }
+  }
+}
 
 #main {
   @extend .pure-g;
   max-width: 980px;
   margin: 0 auto;
-
   .preview {
     @extend .pure-u-1;
     @extend .pure-u-md-2-3;
@@ -27,6 +41,19 @@
     @extend .pure-u-md-1-3;
     @extend .l-box;
 
+    .content-form {
+      @extend .pure-form;
+      @extend .pure-form-stacked;
+
+      textarea{
+        width: 100%;
+        height: 75px;
+        resize: none;
+      }
+      input{
+        width: 100%;
+      }
+    }
   }
 
   .pure-button {
@@ -44,6 +71,7 @@
     float: right;
   }
 }
+
 .pure-g > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -51,30 +79,4 @@
 }
 .l-box {
   padding: .75em;
-}
-
-.home-menu {
-  background: #555;
-}
-.home-menu .pure-menu-heading {
-  color: white;
-  font-weight: 400;
-  font-size: 120%;
-  text-transform: none;
-}
-
-/*#content-form label{
-  display: none;
-}*/
-#content-form textarea{
-  width: 100%;
-  height: 75px;
-  resize: none;
-}
-#content-form input{
-  width: 100%;
-}
-
-#snap-svg {
-
 }
