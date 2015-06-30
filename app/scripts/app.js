@@ -13,7 +13,9 @@
 var app = angular
   .module('memekit', [
     'ngRoute',
-    'ui.router'
+    'ui.router',
+    'ngSanitize',
+    'colorpicker.module'
 ]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
