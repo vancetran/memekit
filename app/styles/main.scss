@@ -5,6 +5,10 @@
 @import "pure/buttons";
 @import "pure/menus";
 
+body {
+  font-size: 11pt;
+}
+
 header {
   .home-menu {
     @extend .pure-menu;

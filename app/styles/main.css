@@ -2360,6 +2360,10 @@ header .home-menu .brand {
   color: #000;
 }
 
+body {
+  font-size: 11pt;
+}
+
 header .home-menu {
   background: #555;
 }

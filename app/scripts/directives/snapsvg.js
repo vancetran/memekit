@@ -23,11 +23,15 @@
            for(var item in element) {
              switch(typeof element[item]) {
                case 'function':
-                 attrs[item] = element[item]();
-                 break;
+                  attrs[item] = element[item]();
+                  if(item === "fill"){
+                    // console.log("Function, item: " + item);
+                    // console.log(attrs[item]);
+                  }
+                  break;
                default:
-                 attrs[item] = element[item];
-                 break;
+                  attrs[item] = element[item];
+                  break;
              }
            }
 
@@ -71,7 +75,7 @@
            return url && url.lastIndexOf('http',0) === 0 && url.lastIndexOf(window.location.host) === -1;
          }
 
-       	// Destringify the JSON object
+        // Destringify the JSON object
          var data = angular.fromJson(scope.svgConfig);
 
          // Custom SVG Drag function, given that we scale the SVG
