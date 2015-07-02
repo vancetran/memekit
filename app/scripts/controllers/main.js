@@ -105,7 +105,9 @@ var app = angular.module('memekit')
             },
             opacity: 1,
             x: 30,
-            y: 261,
+            y: function(){
+              return $scope.size.height - 100;
+            },
             preserveAspectRatio: 'xMinYMin meet',
             editable: {
               src: true,
@@ -126,7 +128,9 @@ var app = angular.module('memekit')
             },
             textAnchor: 'start',
             x: 30,
-            y: 240,
+            y: function(){
+              return $scope.size.height - 120;
+            },
             draggable: true,
             editable: {
               text: true,
