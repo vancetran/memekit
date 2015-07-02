@@ -178,14 +178,15 @@ var app = angular.module('memekit')
 
     if(typeof $scope.config.themes !== 'undefined') {
       $scope.theme = $scope.config.themes[0];
-      // @TODO: uncommented this once theme selector is added
-      // $scope.theme = ($scope.config.themes.length > 1) ? null : $scope.config.themes[0];
     }
 
     $scope.size = $scope.config.sizes[0];
 
-    // @TODO: uncommented this once theme selector is added
-    // $scope.size = ($scope.config.sizes.length > 1) ? null : $scope.config.sizes[0];
+    // if(typeof $scope.config.themes !== 'undefined') {
+    //   $scope.theme = ($scope.config.themes.length > 1) ? null : $scope.config.themes[0];
+    // }
+    //
+    // $scope.size = ($scope.config.sizes.length > 1) ? $scope.config.sizes[0] : $scope.config.sizes[0];
 
     $scope.$watch('theme', function() {
       $scope.$broadcast('changeTheme');
