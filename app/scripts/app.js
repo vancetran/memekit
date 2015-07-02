@@ -12,10 +12,15 @@
 
 var app = angular
   .module('memekit', [
+    'ngAnimate',
+    //'ngCookies',
+    //'ngResource',
     'ngRoute',
-    'ui.router',
     'ngSanitize',
-    'colorpicker.module'
+    //'ngTouch',
+    'colorpicker.module',
+    'draganddrop',
+    'ui.router'
 ]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
