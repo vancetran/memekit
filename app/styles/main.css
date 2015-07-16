@@ -2430,12 +2430,35 @@ header .home-menu .brand {
 }
 
 #main {
+  display: block;
   max-width: 980px;
   margin: 0 auto;
+}
+#main .preview {
+  max-width: 631px;
 }
 #main .preview snap-svg {
   display: block;
   margin-bottom: 10px;
+}
+#main .preview.fixed {
+  position: fixed;
+  top: 20px;
+  height: 90%;
+}
+@media screen and (max-width: 828px) {
+  #main .preview {
+    width: 100%;
+    max-width: 100%;
+  }
+  #main .preview.fixed {
+    position: relative;
+    top: auto;
+    height: auto;
+  }
+}
+#main .controls {
+  float: right;
 }
 #main .controls .icon-caret-down, #main .controls .icon-caret-right {
   margin-right: 10px;
