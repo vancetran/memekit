@@ -4,6 +4,7 @@
 @import "pure/forms";
 @import "pure/buttons";
 @import "pure/menus";
+@import "fonts";
 
 body {
   font-size: 11pt;
@@ -44,6 +45,11 @@ header {
     @extend .pure-u-1;
     @extend .pure-u-md-1-3;
     @extend .l-box;
+
+    .icon-caret-down, .icon-caret-right {
+      margin-right: 10px;
+      float: right;
+    }
 
     .content-form {
       @extend .pure-form;
