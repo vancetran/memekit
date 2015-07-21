@@ -126,7 +126,7 @@
     contentType = contentType || '';
     sliceSize = sliceSize || 512;
 
-    var byteCharacters = atob( b64Data.substring("data:image/png;base64,".length ) );
+    var byteCharacters = atob( b64Data.replace(/^.*?base64,/, '') );
     // var byteCharacters = b64Data;
     var byteArrays = [];
 
