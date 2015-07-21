@@ -179,7 +179,7 @@ var app = angular.module('memekit')
       $scope.$broadcast('resetSvg');
     }
 
-    var wizardIntro = true;
+    var wizardIntro = false;
 
     if (wizardIntro){
       if(typeof $scope.config.themes !== 'undefined') {

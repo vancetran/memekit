@@ -111,13 +111,14 @@
         var contentType = "image/png";
 
         var blob = b64toBlob(b64Data );
-        var blobUrl = URL.createObjectURL(blob);
+        var blobUrl = window.URL.createObjectURL(blob);
 
         var a = document.createElement("a");
         a.href = blobUrl;
         a.download = name;
+        document.body.appendChild(a);
         a.click();
-        window.URL.revokeObjectURL(blobUrl);
+        // window.URL.revokeObjectURL(blobUrl);
       }
     });
   }
