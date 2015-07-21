@@ -87,7 +87,7 @@ var app = angular.module('memekit')
               filters: [
                 'Sepia',
                 'Grayscale',
-                'Saturate',
+                'Desaturate',
                 'Invert',
                 'Blur'
               ],
