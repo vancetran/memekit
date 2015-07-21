@@ -119,16 +119,15 @@
         document.body.appendChild(a);
         a.click();
         // window.URL.revokeObjectURL(blobUrl);
-      }
+      };
     });
-  }
+  };
 
   function b64toBlob(b64Data, contentType, sliceSize) {
     contentType = contentType || '';
     sliceSize = sliceSize || 512;
 
     var byteCharacters = atob( b64Data.replace(/^.*?base64,/, '') );
-    // var byteCharacters = b64Data;
     var byteArrays = [];
 
     for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
@@ -140,7 +139,6 @@
       }
 
       var byteArray = new Uint8Array(byteNumbers);
-
       byteArrays.push(byteArray);
     }
 
