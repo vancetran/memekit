@@ -2529,3 +2529,7 @@ header .home-menu .brand {
 .l-box, #main .preview, #main .controls {
   padding: .75em;
 }
+
+#svg *[draggable="true"], #snap-svg *[draggable="true"] {
+  cursor: move;
+}
