@@ -28,6 +28,11 @@ var app = angular.module('memekit')
           height: 320,
         },
         {
+          name: 'Instagram',
+          width: 640,
+          height: 640,
+        },
+        {
           name: 'Video',
           width: 640,
           height: 360,
