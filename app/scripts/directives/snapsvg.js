@@ -327,6 +327,7 @@
      					el.altDrag();
      				}
      			});
+          reorderSvgElements();
        	}
 
          function resetSvg() {
@@ -335,6 +336,14 @@
              e.transform('');
            });
          }
+
+        // moves Headline and Credit SVG elements to the bottom of SVG, so they'll show up on top of the z-index pile
+        var reorderSvgElements = function() {
+          var headline = document.querySelector("#snap-svg text[name=Headline]");
+          var credit = document.querySelector("#snap-svg text[name=Credit]");
+          document.getElementById('snap-svg').appendChild(headline);
+          document.getElementById('snap-svg').appendChild(credit);
+        };
 
        	// Watch for changes on the scope and the theme, and redraw
          scope.$watch('svgConfig', drawElements, true);
