@@ -105,16 +105,16 @@ header {
   .dropzone {
     border: 2px dashed #b7b7b7;
     width: 100%;
-    height: 200px;
+    height: 100px;
     position: relative;
     margin: 0 0 10px;
 
     &:before {
       content: 'Drop your image here';
       color: #b7b7b7;
-      font-size: 2em;
+      font-size: 1.75em;
       position: absolute;
-      top: 60px; left: 0;
+      top: 10px; left: 0;
       width: 100%;
       text-align: center;
     }
@@ -131,7 +131,7 @@ header {
     margin-right: auto;
 		position: relative;
 		overflow: hidden;
-		margin: 110px auto 10px;
+		margin: 60px auto 10px;
 		width: 50%;
 		text-align: center;
 		cursor: pointer;
@@ -163,5 +163,8 @@ header {
 #svg, #snap-svg {
   *[draggable="true"]{
   	cursor: move;
+  }
+
+  image {
   }
 }

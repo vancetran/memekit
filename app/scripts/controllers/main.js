@@ -143,6 +143,7 @@ var app = angular.module('memekit')
                 'Medium (18px)': 18,
                 'Large (22px)': 22,
                 'Extra Large (36px)': 36,
+                'Largest (42px)': 42
               },
               fill: 'picker',
               textAnchor: true
@@ -172,6 +173,7 @@ var app = angular.module('memekit')
                 'Medium (26px)': 26,
                 'Large (32px)': 32,
                 'Extra Large (40px)': 40,
+                'Largest (72px)': 72,
               },
             },
           },

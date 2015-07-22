@@ -2481,16 +2481,16 @@ header .home-menu .brand {
 #main .dropzone {
   border: 2px dashed #b7b7b7;
   width: 100%;
-  height: 200px;
+  height: 100px;
   position: relative;
   margin: 0 0 10px;
 }
 #main .dropzone:before {
   content: 'Drop your image here';
   color: #b7b7b7;
-  font-size: 2em;
+  font-size: 1.75em;
   position: absolute;
-  top: 60px;
+  top: 10px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2504,7 +2504,7 @@ header .home-menu .brand {
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  margin: 110px auto 10px;
+  margin: 60px auto 10px;
   width: 50%;
   text-align: center;
   cursor: pointer;
