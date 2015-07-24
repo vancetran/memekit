@@ -21,8 +21,7 @@
     "url": "https://github.com/vancetran/meme/issues"
   },
   "homepage": "https://github.com/vancetran/meme#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^1.2.0",
     "express": "^4.12.4",
