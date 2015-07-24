@@ -12,7 +12,6 @@
 
 var app = angular
   .module('memekit', [
-    'ngAnimate',
     //'ngCookies',
     //'ngResource',
     'ngRoute',
