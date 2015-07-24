@@ -2185,7 +2185,7 @@ Licensed under the BSD License.
 https://github.com/yahoo/pure/blob/master/LICENSE.md
 */
 /*csslint adjoining-classes: false, box-model:false*/
-.pure-menu, header .home-menu {
+.pure-menu, .masthead-nav {
   box-sizing: border-box;
 }
 
@@ -2215,29 +2215,30 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
 .pure-menu-link,
 .pure-menu-heading,
-header .home-menu .brand {
+.masthead-nav-logo {
   display: block;
   text-decoration: none;
   white-space: nowrap;
 }
 
 /* HORIZONTAL MENU */
-.pure-menu-horizontal, header .home-menu {
+.pure-menu-horizontal, .masthead-nav {
   width: 100%;
   white-space: nowrap;
 }
 
-.pure-menu-horizontal .pure-menu-list, header .home-menu .pure-menu-list {
+.pure-menu-horizontal .pure-menu-list, .masthead-nav .pure-menu-list {
   display: inline-block;
 }
 
 /* Initial menus should be inline-block so that they are horizontal */
-.pure-menu-horizontal .pure-menu-item, header .home-menu .pure-menu-item,
+.pure-menu-horizontal .pure-menu-item, .masthead-nav .pure-menu-item,
 .pure-menu-horizontal .pure-menu-heading,
-header .home-menu .pure-menu-heading,
-header .home-menu .brand,
+.masthead-nav .pure-menu-heading,
+.pure-menu-horizontal .masthead-nav-logo,
+.masthead-nav .masthead-nav-logo,
 .pure-menu-horizontal .pure-menu-separator,
-header .home-menu .pure-menu-separator {
+.masthead-nav .pure-menu-separator {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -2259,7 +2260,7 @@ header .home-menu .pure-menu-separator {
   z-index: 3;
 }
 
-.pure-menu-horizontal .pure-menu-children, header .home-menu .pure-menu-children {
+.pure-menu-horizontal .pure-menu-children, .masthead-nav .pure-menu-children {
   left: 0;
   top: auto;
   width: inherit;
@@ -2279,7 +2280,7 @@ header .home-menu .pure-menu-separator {
 }
 
 /* Horizontal Menus - show the dropdown arrow */
-.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after, header .home-menu .pure-menu-has-children > .pure-menu-link:after {
+.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after, .masthead-nav .pure-menu-has-children > .pure-menu-link:after {
   content: "\25BE";
 }
 
@@ -2293,11 +2294,11 @@ header .home-menu .pure-menu-separator {
   display: block;
 }
 
-.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list, header .pure-menu-scrollable.home-menu .pure-menu-list {
+.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list, .pure-menu-scrollable.masthead-nav .pure-menu-list {
   display: inline-block;
 }
 
-.pure-menu-horizontal.pure-menu-scrollable, header .pure-menu-scrollable.home-menu {
+.pure-menu-horizontal.pure-menu-scrollable, .pure-menu-scrollable.masthead-nav {
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: auto;
@@ -2307,7 +2308,7 @@ header .home-menu .pure-menu-separator {
   padding: .5em 0;
 }
 
-.pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar, header .pure-menu-scrollable.home-menu::-webkit-scrollbar {
+.pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar, .pure-menu-scrollable.masthead-nav::-webkit-scrollbar {
   display: none;
 }
 
@@ -2318,13 +2319,13 @@ header .home-menu .pure-menu-separator {
   margin: .3em 0;
 }
 
-.pure-menu-horizontal .pure-menu-separator, header .home-menu .pure-menu-separator {
+.pure-menu-horizontal .pure-menu-separator, .masthead-nav .pure-menu-separator {
   width: 1px;
   height: 1.3em;
   margin: 0 0.3em;
 }
 
-.pure-menu-heading, header .home-menu .brand {
+.pure-menu-heading, .masthead-nav-logo {
   text-transform: uppercase;
   color: #565d64;
 }
@@ -2340,7 +2341,7 @@ header .home-menu .pure-menu-separator {
 .pure-menu-link,
 .pure-menu-disabled,
 .pure-menu-heading,
-header .home-menu .brand {
+.masthead-nav-logo {
   padding: .5em 1em;
 }
 
@@ -2419,10 +2420,11 @@ body {
   font-size: 11pt;
 }
 
-header .home-menu {
+.masthead-nav {
   background: #555;
 }
-header .home-menu .brand {
+
+.masthead-nav-logo {
   color: white;
   font-weight: 400;
   font-size: 120%;
@@ -2516,7 +2518,7 @@ header .home-menu .brand {
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  margin: 60px auto 10px;
+  margin: 50px auto 10px;
   width: 50%;
   text-align: center;
   cursor: pointer;

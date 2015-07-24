@@ -10,20 +10,18 @@ body {
   font-size: 11pt;
 }
 
-header {
-  .home-menu {
-    @extend .pure-menu;
-    @extend .pure-menu-horizontal;
-    background: #555;
-
-    .brand {
-      @extend .pure-menu-heading;
-      color: white;
-      font-weight: 400;
-      font-size: 120%;
-      text-transform: none;
-    }
-  }
+.masthead {}
+.masthead-nav {
+  @extend .pure-menu;
+  @extend .pure-menu-horizontal;
+  background: #555;
+}
+.masthead-nav-logo {
+  @extend .pure-menu-heading;
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+  text-transform: none;
 }
 
 #main {
@@ -148,7 +146,7 @@ header {
     margin-right: auto;
 		position: relative;
 		overflow: hidden;
-		margin: 60px auto 10px;
+		margin: 50px auto 10px;
 		width: 50%;
 		text-align: center;
 		cursor: pointer;
