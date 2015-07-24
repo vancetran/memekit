@@ -10,8 +10,8 @@ angular.module('memekit')
   .directive('filterEditor', function () {
     return {
       template: '<div>' +
-            '<label>Filter</label>' +
-            '<select ng-model="element.defaultFilter" ng-options="filter for filter in filters" class="form-control">' +
+            '<label for="filtereditor-{{element.name}}">Filter</label>' +
+            '<select id="filtereditor-{{element.name}}" ng-model="element.defaultFilter" ng-options="filter for filter in filters" class="form-control">' +
               '<option value="">No filter</option>' +
             '</select>' +
           '</div>',

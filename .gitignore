@@ -4,6 +4,7 @@ app/bower_components
 .grunt/
 .tmp/
 .sass-cache/
+.publish/
 build/
 
 # UC Specific stuff

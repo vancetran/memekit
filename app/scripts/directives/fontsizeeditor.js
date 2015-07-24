@@ -10,8 +10,8 @@ angular.module('memekit')
   .directive('fontsizeEditor', function () {
     return {
       template: '<div>'+
-            '<label>Font Size</label>'+
-            '<select ng-model="element.fontSize" ng-options="name for (name, value) in field" class="form-control">'+
+            '<label for="fontsizeeditor-{{element.name}}">Font Size</label>'+
+            '<select id="fontsizeeditor-{{element.name}}" ng-model="element.fontSize" ng-options="name for (name, value) in field" class="form-control">'+
               '<option value="">-- Select a Font Size --</option>'+
             '</select>'+
           '</div>',

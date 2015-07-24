@@ -18,7 +18,8 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     del = require('del'),
-    useref = require('gulp-useref');
+    useref = require('gulp-useref'),
+    ghPages = require('gulp-gh-pages');
 
 // Copy files
 gulp.task('copy', function () {
@@ -120,7 +121,11 @@ gulp.task('watch', function () {
 });
 
 
-
+// Publish to GitHub Pages
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 // Dev
 gulp.task('dev', function () {

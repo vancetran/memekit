@@ -10,8 +10,8 @@ angular.module('memekit')
   .directive('textanchorEditor', function () {
     return {
       template: '<div>' +
-            '<label>Text Anchor</label>' +
-            '<select ng-model="element.textAnchor" class="form-control">' +
+            '<label for="filtereditor-{{element.name}}">Text Anchor</label>' +
+            '<select id="filtereditor-{{element.name}}" ng-model="element.textAnchor" class="form-control">' +
               '<option value="">-- Select a Text Anchor --</option>' +
               '<option value="start">Start</option>' +
               '<option value="middle">Middle</option>' +

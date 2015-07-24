@@ -10,8 +10,8 @@ angular.module('memekit')
   .directive('sizeEditor', function () {
     return {
       template: '<div>' +
-            '<label>Size</label>' +
-            '<input type="range" min="10" max="1000" ng-model="element.width" />' +
+            '<label for="sizeeditor-{{element.name}}">Size</label>' +
+            '<input id="sizeeditor-{{element.name}}" type="range" min="10" max="1000" ng-model="element.width" />' +
           '</div>',
       restrict: 'E',
       replace: true,
