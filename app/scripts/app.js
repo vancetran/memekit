@@ -18,7 +18,7 @@ var app = angular
     'ngRoute',
     'ngSanitize',
     //'ngTouch',
-    'colorpicker.module',
+    // 'colorpicker.module',
     'draganddrop',
     'ui.router'
 ]);
