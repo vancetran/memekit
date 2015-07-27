@@ -224,7 +224,7 @@ var app = angular.module('memekit')
     };
 
     $scope.fileChanged = function(file) {
-      readFile(angular.element(file)[0].files[0], angular.element(file).data('key'));
+      readFile(angular.element(file)[0].files[0], angular.element(file)[0].dataset.key);
     };
 
     // Read the supplied file (from DataTransfer API)
