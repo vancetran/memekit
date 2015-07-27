@@ -23,6 +23,8 @@
     "angular-ui-router": "~0.2.15",
     "angular-sanitize": "1.4.0",
     "angular-draganddrop": "~0.2.1",
-    "angular-bootstrap-colorpicker": "~3.0.18"
+    "angular-bootstrap-colorpicker": "~3.0.18",
+    "angular-resource": "~1.4.3",
+    "angular-cookies": "~1.4.3"
   }
 }

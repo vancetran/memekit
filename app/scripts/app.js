@@ -12,8 +12,8 @@
 
 var app = angular
   .module('memekit', [
-    //'ngCookies',
-    //'ngResource',
+    'ngCookies',
+    'ngResource',
     'ngRoute',
     'ngSanitize',
     //'ngTouch',

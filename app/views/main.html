@@ -65,33 +65,7 @@
         </div>
 
         <!-- Groups -->
-        <div ng-if="element.type === 'group' && element.elements[k].editable" ng-repeat="(k, e) in element.elements" ng-switch="e.editable">
-          <div ng-repeat="(t, f) in e.editable" ng-switch="t">
-            <!-- Text -->
-            <text-editor ng-switch-when="text" element="e"></text-editor>
-
-            <!-- Fill -->
-            <fill-editor ng-switch-when="fill" element="e" field="f"></fill-editor>
-
-            <!-- Font Size -->
-            <fontsize-editor ng-switch-when="fontSize" element="e" field="f"></fontsize-editor>
-
-            <!-- Font Family -->
-            <fontfamily-editor ng-switch-when="fontFamily" element="e" field="f"></fontfamily-editor>
-
-            <!-- Width / Size -->
-            <size-editor ng-switch-when="width" element="e"></size-editor>
-
-            <!-- Text Anchor -->
-            <textanchor-editor ng-switch-when="textAnchor" element="e"></textanchor-editor>
-
-            <!-- Opacity -->
-            <opacity-editor ng-switch-when="opacity" element="e"></opacity-editor>
-
-            <!-- Filter -->
-            <filter-editor ng-switch-when="filters" filters="e.editable.filters" element="e"></filter-editor>
-          </div>
-        </div>
+        
       </div>
     </div>
 
