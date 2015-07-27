@@ -10,12 +10,12 @@ angular.module('memekit')
   .directive('imageEditor', function () {
     return {
       template: '<div>' +
-            '<label for="imageeditor-{{element.name}}">Image</label>' +
+            '<label>Image</label>' +
             '<div class="dropzone" drop="onDrop($data, $event, key)" drop-effect="copy" drop-accept="\'Files\'" drag-over-class="drag-over-accept">' +
 
               '<div class="fileInputWrapper button">' +
                 '<span>or select an image</span>' +
-                '<input id="imageeditor-{{element.name}}" onchange="angular.element(this).scope().$parent.fileChanged(this, event)" data-key="{{key}}" type="file" accept="image/*" />' +
+                '<input onchange="angular.element(this).scope().$parent.fileChanged(this, event)" data-key="{{key}}" type="file" accept="image/*" />' +
               '</div>' +
 
             '</div>' +
