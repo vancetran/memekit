@@ -31,8 +31,9 @@
 
       <div ng-repeat="(key, element) in config.svg.elements" ng-if="element.editable" class="panel">
 
-        <h3 ng-click="show[key] = !show[key]"><i class="icon-caret-right" ng-hide="show[key]"></i><i class="icon-caret-down" ng-hide="!show[key]"></i>{{element.name}}</h3>
-        <div ng-if="element.type !== 'group'" ng-repeat="(type, field) in element.editable" ng-switch="type" ng-hide="show[key] || show[key] === undefined" ng-show="show[key]" ng-animate="'animate'">
+        <h3 ng-click="show[key] = !show[key]"><i class="icon-caret-right" ng-show="show[key]"></i><i class="icon-caret-down" ng-show="!show[key]"></i>{{element.name}}</h3>
+        <div ng-if="element.type !== 'group'" ng-repeat="(type, field) in element.editable" ng-switch="type"
+          ng-hide="show[key]">
           <!-- Text -->
           <text-editor ng-switch-when="text" element="element"></text-editor>
 
@@ -62,7 +63,7 @@
         </div>
 
         <!-- Groups -->
-        <div ng-if="element.type === 'group' && element.elements[k].editable" ng-repeat="(k, e) in element.elements" ng-switch="e.editable" ng-hide="show[key]">
+        <div ng-if="element.type === 'group' && element.elements[k].editable" ng-repeat="(k, e) in element.elements" ng-switch="e.editable">
           <div ng-repeat="(t, f) in e.editable" ng-switch="t">
             <!-- Text -->
             <text-editor ng-switch-when="text" element="e"></text-editor>
