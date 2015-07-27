@@ -22,6 +22,7 @@
     "snap.svg": "~0.4.1",
     "angular-ui-router": "~0.2.15",
     "angular-sanitize": "1.4.0",
-    "angular-draganddrop": "~0.2.1"
+    "angular-draganddrop": "~0.2.1",
+    "angular-bootstrap-colorpicker": "~3.0.18"
   }
 }
