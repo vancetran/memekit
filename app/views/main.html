@@ -6,6 +6,7 @@
       <button class="reset" ng-click="resetSvg()"><i class="icon-reset"></i> Reset</button>
     </div>
 
+    <div class="content-form">
       <div class="panel" ng-show="config.sizes">
         <h3>Dimensions <small>Choose your image output size</small></h3>
         <select id="size" ng-model="size" ng-options="size.name for size in config.sizes" class="form-control" ng-hide="dimensions">
@@ -20,9 +21,10 @@
         </select>
       </div>
 
-    <div class="panel">
-      <h3>Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
-      <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
+      <div class="panel">
+        <h3>Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
+        <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
+      </div>
     </div>
   </div>
 

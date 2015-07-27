@@ -48,6 +48,11 @@ body {
   		height: 90%;
   	}
 
+    .content-form {
+      @extend .pure-form;
+      @extend .pure-form-stacked;
+    }
+
     @media screen and (max-width: 828px) {
   		width: 100%;
   		max-width: 100%;
