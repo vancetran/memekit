@@ -60,7 +60,7 @@ var app = angular.module('memekit')
             type: 'text',
             text: 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the colour of the text too.',
             fill: function() {
-              return $scope.theme.quote;
+              return $scope.theme.headline;
             },
             fontSize: 26,
             fontFamily: function() {
