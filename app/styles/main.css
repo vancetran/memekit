@@ -2599,6 +2599,12 @@ body {
   background: #eee;
   padding: .5em;
   margin: 0;
+  -webkit-transition: background-color 0.25s;
+          transition: background-color 0.25s;
+  cursor: pointer;
+}
+#main .controls .content-form .panel h3:hover {
+  background-color: #ddd;
 }
 #main .pure-button, #main button.button-primary, #main button, #main .fileInputWrapper {
   border-radius: 5px;

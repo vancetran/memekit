@@ -11,7 +11,7 @@ angular.module('memekit')
     return {
       template: '<div>' +
             '<label for="sizeeditor-{{element.name}}">Size</label>' +
-            '<input id="sizeeditor-{{element.name}}" type="range" min="10" max="1000" ng-model="element.width" />' +
+            '<input id="sizeeditor-{{element.name}}" type="range" min="10" max="2000" ng-model="element.width" />' +
           '</div>',
       restrict: 'E',
       replace: true,

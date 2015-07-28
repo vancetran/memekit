@@ -120,6 +120,12 @@ body {
           background: #eee;
           padding: .5em;
           margin: 0;
+          transition: background-color 0.25s;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #ddd;
+          }
         }
       }
     }

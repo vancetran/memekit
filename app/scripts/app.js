@@ -19,7 +19,6 @@ var app = angular
     //'ngTouch',
     'colorpicker.module',
     'draganddrop',
-    'colorpicker.module',
     'ui.router'
 ]);
 
