@@ -73,6 +73,7 @@ var app = angular.module('memekit')
             x: 30,
             y: 55,
             draggable: true,
+            collapsed: false,
             editable: {
               text: true,
               fill: 'picker',
@@ -102,6 +103,7 @@ var app = angular.module('memekit')
             y: function(){
               return $scope.size.height - 120;
             },
+            collapsed: true,
             draggable: true,
             editable: {
               text: true,
@@ -128,6 +130,7 @@ var app = angular.module('memekit')
             fill: function() {
               return $scope.theme.background;
             },
+            collapsed: true,
             editable: {
               fill: 'picker'
             }
@@ -144,6 +147,7 @@ var app = angular.module('memekit')
             x: '0%',
             y: '0%',
             preserveAspectRatio: 'xMinYMin meet',
+            collapsed: true,
             draggable: true,
             defaultFilter: '',
             editable: {
@@ -178,6 +182,7 @@ var app = angular.module('memekit')
               src: true,
               width: true,
             },
+            collapsed: true,
             draggable: true
           },
 

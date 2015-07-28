@@ -53,6 +53,13 @@ body {
       @extend .pure-form-stacked;
     }
 
+    h3 {
+      small {
+        font-weight: normal;
+        color: #AAA;
+      }
+    }
+
     @media screen and (max-width: 828px) {
   		width: 100%;
   		max-width: 100%;

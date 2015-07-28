@@ -23,10 +23,10 @@ angular.module('memekit')
             switch (typeof element[item]) {
               case 'function':
                 attrs[item] = element[item]();
-                if (item === "fill") {
-                  // console.log("Function, item: " + item);
-                  // console.log(attrs[item]);
-                }
+                // if (item === "fill") {
+                //   console.log("Function, item: " + item);
+                //   console.log(attrs[item]);
+                // }
                 break;
               default:
                 attrs[item] = element[item];

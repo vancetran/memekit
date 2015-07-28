@@ -6,8 +6,10 @@
  * @description
  * # snapSVG
  * Service in the memekit.
- */
-angular.module('memekit')
+*/
+(function(){
+var app = angular.module('memekit')
   .service('snapSVG', function snapSVG($window) {
     return $window.Snap;
   });
+})();

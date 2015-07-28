@@ -6,8 +6,11 @@
  * @description
  * # themeConfigProvider
  * Service in the memekit.
- */
-angular.module('memekit')
+*/
+
+(function(){
+
+var app = angular.module('memekit')
   .provider('themeConfigProvider', function () {
   	return {
   	  $get: function($http, $q) {
@@ -25,3 +28,4 @@ angular.module('memekit')
   		}
   	};
   });
+})();

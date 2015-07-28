@@ -2540,6 +2540,10 @@ body {
   top: 20px;
   height: 90%;
 }
+#main .preview h3 small {
+  font-weight: normal;
+  color: #AAA;
+}
 @media screen and (max-width: 828px) {
   #main .preview {
     width: 100%;

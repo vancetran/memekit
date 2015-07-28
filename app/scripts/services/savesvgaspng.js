@@ -6,8 +6,11 @@
  * @description
  * # saveSvgAsPng
  * Service in the memekit.
- */
-angular.module('memekit')
+*/
+
+(function(){
+var app = angular.module('memekit')
   .service('saveSvgAsPng', function ($window) {
     return $window.saveSvgAsPng;
   });
+})();
