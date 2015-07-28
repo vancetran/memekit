@@ -33,7 +33,6 @@ angular.module('memekit')
                 break;
             }
           }
-
           return attrs;
         }
 

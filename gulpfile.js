@@ -34,6 +34,12 @@ gulp.task('copy', function () {
   gulp.src('app/scripts/**/*.json')
   .pipe(gulp.dest('build/scripts/'));
 
+  gulp.src('app/bower_components/angular-bootstrap-colorpicker/js/bootstrap-colorpicker-module.min.js')
+  .pipe(gulp.dest('build/scripts/'));
+  
+  gulp.src('bower_components/angular-bootstrap-colorpicker/css/colorpicker.css')
+  .pipe(gulp.dest('build/styles/'));
+
   gulp.src('app/fonts/**/*')
   .pipe(gulp.dest('build/fonts/'));
 
