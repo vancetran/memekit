@@ -2,8 +2,8 @@
   <div class="preview" fixed-scroll>
     <div class="svg-wrapper" ng-if="((config.themes.length > 0 && theme) || !config.themes) && ((config.sizes.length > 0 && size) || !config.sizes)">
       <snap-svg svg-config="config.svg"></snap-svg>
-      <button class="primary" ng-click="downloadSvg()"><i class="icon-download"></i> Download Image</button>
-      <button class="reset" ng-click="resetSvg()"><i class="icon-reset"></i> Reset</button>
+      <button class="button-primary" ng-click="downloadSvg()"><i class="icon-download"></i> Download Image</button>
+      <button class="button-reset button-danger" ng-click="resetSvg()"><i class="icon-rotate-left"></i> Reset</button>
     </div>
 
     <div class="content-form">

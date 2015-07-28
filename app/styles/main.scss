@@ -58,6 +58,12 @@ body {
         font-weight: normal;
         color: #AAA;
       }
+      margin-bottom: 10px;
+    }
+
+    .button-danger {
+      background-color: #d66;
+      color: #fff;
     }
 
     @media screen and (max-width: 828px) {
@@ -102,6 +108,11 @@ body {
         margin-bottom: 20px;
       }
 
+      .button-danger {
+        background-color: #d66;
+        color: #fff;
+      }
+
       .panel {
         border-top: 2px solid #ddd;
 
@@ -118,14 +129,14 @@ body {
     border-radius: 5px;
   }
 
-  button.primary {
+  button.button-primary {
     @extend .pure-button;
     @extend .pure-button-primary;
   }
   button {
     @extend .pure-button;
   }
-  button.reset {
+  button.button-reset {
     float: right;
   }
   .dropzone {

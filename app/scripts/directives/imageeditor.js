@@ -19,7 +19,7 @@ angular.module('memekit')
               '</div>' +
 
             '</div>' +
-            '<button ng-show="config.elements[key].src !== \'\'" ng-click="removeImage(key)" class="button button-danger"><i class="fa fa-times"></i> Remove Image</button>' +
+            '<button ng-show="config.elements[key].src !== \'\'" ng-click="removeImage(key)" class="button button-danger"><i class="icon-x"></i> Remove Image</button>' +
           '</div>',
       restrict: 'E',
       scope: {
