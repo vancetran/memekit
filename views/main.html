@@ -2,10 +2,11 @@
   <div class="preview" fixed-scroll>
     <div class="svg-wrapper" ng-if="((config.themes.length > 0 && theme) || !config.themes) && ((config.sizes.length > 0 && size) || !config.sizes)">
       <snap-svg svg-config="config.svg"></snap-svg>
-      <button class="primary" ng-click="downloadSvg()"><i class="icon-download"></i> Download Image</button>
-      <button class="reset" ng-click="resetSvg()"><i class="icon-reset"></i> Reset</button>
+      <button class="button-primary" ng-click="downloadSvg()"><i class="icon-download"></i> Download Image</button>
+      <button class="button-reset button-danger" ng-click="resetSvg()"><i class="icon-rotate-left"></i> Reset</button>
     </div>
 
+    <div class="content-form">
       <div class="panel" ng-show="config.sizes">
         <h3>Dimensions <small>Choose your image output size</small></h3>
         <select id="size" ng-model="size" ng-options="size.name for size in config.sizes" class="form-control" ng-hide="dimensions">
@@ -20,9 +21,10 @@
         </select>
       </div>
 
-    <div class="panel">
-      <h3>Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
-      <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
+      <div class="panel">
+        <h3>Scale ({{config.output.scale}}x) <small>Choose the scaled output size</small></h3>
+        <input id="scale" type="range" max="3" min="1" step="1" ng-model="config.output.scale" ng-hide="scale" />
+      </div>
     </div>
   </div>
 
@@ -31,9 +33,9 @@
 
       <div ng-repeat="(key, element) in config.svg.elements" ng-if="element.editable" class="panel">
 
-        <h3 ng-click="show[key] = !show[key]"><i class="icon-caret-right" ng-show="show[key]"></i><i class="icon-caret-down" ng-show="!show[key]"></i>{{element.name}}</h3>
+        <h3 ng-click="element.collapsed = !element.collapsed">{{element.show}}<i class="icon-caret-right" ng-show="element.collapsed"></i><i class="icon-caret-down" ng-show="!element.collapsed"></i>{{element.name}}</h3>
         <div ng-if="element.type !== 'group'" ng-repeat="(type, field) in element.editable" ng-switch="type"
-          ng-hide="show[key]">
+          ng-hide="element.collapsed">
           <!-- Text -->
           <text-editor ng-switch-when="text" element="element"></text-editor>
 
@@ -63,33 +65,7 @@
         </div>
 
         <!-- Groups -->
-        <div ng-if="element.type === 'group' && element.elements[k].editable" ng-repeat="(k, e) in element.elements" ng-switch="e.editable">
-          <div ng-repeat="(t, f) in e.editable" ng-switch="t">
-            <!-- Text -->
-            <text-editor ng-switch-when="text" element="e"></text-editor>
 
-            <!-- Fill -->
-            <fill-editor ng-switch-when="fill" element="e" field="f"></fill-editor>
-
-            <!-- Font Size -->
-            <fontsize-editor ng-switch-when="fontSize" element="e" field="f"></fontsize-editor>
-
-            <!-- Font Family -->
-            <fontfamily-editor ng-switch-when="fontFamily" element="e" field="f"></fontfamily-editor>
-
-            <!-- Width / Size -->
-            <size-editor ng-switch-when="width" element="e"></size-editor>
-
-            <!-- Text Anchor -->
-            <textanchor-editor ng-switch-when="textAnchor" element="e"></textanchor-editor>
-
-            <!-- Opacity -->
-            <opacity-editor ng-switch-when="opacity" element="e"></opacity-editor>
-
-            <!-- Filter -->
-            <filter-editor ng-switch-when="filters" filters="e.editable.filters" element="e"></filter-editor>
-          </div>
-        </div>
       </div>
     </div>
 
