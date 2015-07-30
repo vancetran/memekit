@@ -7,11 +7,3 @@ This is an effort to rebuild [Meme-Gen](https://github.com/vancetran/meme-gen) f
 I'm developing in the open, so mind the dust – this is not ready for public consumption yet. Head over to [Meme-Gen](https://github.com/vancetran/meme-gen) for something less sophisticated, but production-ready.
 
 A fork of [CardKit](https://github.com/times/cardkit). Draws inspiration from [Vox's Meme](https://github.com/voxmedia/meme) and [Pixelcite](https://github.com/onyxfish/pixelcite).
-
-## Gulp commands
-
-```
-gulp
-gulp dev
-gulp deploy
-```
