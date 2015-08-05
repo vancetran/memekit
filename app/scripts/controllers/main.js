@@ -58,9 +58,9 @@ var app = angular.module('memekit')
           {
             name: 'Headline',
             type: 'text',
-            text: 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the colour of the text too.',
+            text: 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the color of the text too.',
             // text: function() {
-            //   return $scope.theme.headlineText || 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the colour of the text too.';
+            //   return $scope.theme.headlineText || 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the color of the text too.';
             // },
             fill: function() {
               return $scope.theme.headline;
@@ -71,7 +71,9 @@ var app = angular.module('memekit')
             },
             textAnchor: 'start',
             x: 30,
-            y: 55,
+            y: function(){
+              return $scope.size.height - 130;
+            },
             draggable: true,
             collapsed: false,
             editable: {
@@ -83,7 +85,7 @@ var app = angular.module('memekit')
                 'Medium (26px)': 26,
                 'Large (32px)': 32,
                 'Extra Large (40px)': 40,
-                'Largest (72px)': 72,
+                'Jumbo (72px)': 72,
               },
             },
           },
@@ -98,10 +100,12 @@ var app = angular.module('memekit')
             fontFamily: function() {
               return $scope.theme.headlineFont;
             },
-            textAnchor: 'start',
-            x: 30,
+            textAnchor: 'end',
+            x: function(){
+              return $scope.size.width - 30;
+            },
             y: function(){
-              return $scope.size.height - 120;
+              return $scope.size.height - 30;
             },
             collapsed: true,
             draggable: true,
@@ -112,7 +116,7 @@ var app = angular.module('memekit')
                 'Medium (18px)': 18,
                 'Large (22px)': 22,
                 'Extra Large (36px)': 36,
-                'Largest (42px)': 42
+                'Jumbo (42px)': 42
               },
               fill: 'picker',
               textAnchor: true
@@ -174,9 +178,7 @@ var app = angular.module('memekit')
             },
             opacity: 1,
             x: 30,
-            y: function(){
-              return $scope.size.height - 100;
-            },
+            y: 30,
             preserveAspectRatio: 'xMinYMin meet',
             editable: {
               src: true,
