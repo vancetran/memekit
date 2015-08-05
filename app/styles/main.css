@@ -2660,6 +2660,7 @@ body {
   color: #fff;
 }
 #main .controls .content-form .panel {
+  clear: both;
   border-top: 2px solid #ddd;
 }
 #main .controls .content-form .panel h3 {
@@ -2744,7 +2745,7 @@ body {
   display: block;
   list-style: none;
   padding: 0;
-  margin: -10px 0 20px 0;
+  margin: -20px 0 20px 0;
   clear: both;
   width: 100%;
   height: auto;
