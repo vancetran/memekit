@@ -2638,6 +2638,7 @@ body {
 }
 #main .controls {
   float: right;
+  padding-bottom: 100px !important;
 }
 #main .controls .icon-caret-down, #main .controls .icon-caret-right {
   margin-right: 10px;
@@ -2668,6 +2669,7 @@ body {
   -webkit-transition: background-color 0.25s;
           transition: background-color 0.25s;
   cursor: pointer;
+  clear: both;
 }
 #main .controls .content-form .panel h3:hover {
   background-color: #ddd;
@@ -2733,4 +2735,22 @@ body {
 
 #svg *[draggable="true"], #snap-svg *[draggable="true"] {
   cursor: move;
+}
+
+.color-swatches ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: -10px 0 20px 0;
+  clear: both;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.color-swatches ul li {
+  cursor: pointer;
+  display: block;
+  width: 10%;
+  height: 30px;
+  float: left;
 }
