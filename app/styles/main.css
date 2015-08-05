@@ -2307,6 +2307,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
 .pure-menu-link,
 .pure-menu-heading,
+.masthead-nav .masthead-social,
 .masthead-nav-logo {
   display: block;
   text-decoration: none;
@@ -2327,6 +2328,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 .pure-menu-horizontal .pure-menu-item, .masthead-nav .pure-menu-item,
 .pure-menu-horizontal .pure-menu-heading,
 .masthead-nav .pure-menu-heading,
+.masthead-nav .masthead-social,
 .pure-menu-horizontal .masthead-nav-logo,
 .masthead-nav .masthead-nav-logo,
 .pure-menu-horizontal .pure-menu-separator,
@@ -2417,7 +2419,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   margin: 0 0.3em;
 }
 
-.pure-menu-heading, .masthead-nav-logo {
+.pure-menu-heading, .masthead-nav .masthead-social, .masthead-nav-logo {
   text-transform: uppercase;
   color: #565d64;
 }
@@ -2433,6 +2435,7 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 .pure-menu-link,
 .pure-menu-disabled,
 .pure-menu-heading,
+.masthead-nav .masthead-social,
 .masthead-nav-logo {
   padding: .5em 1em;
 }
@@ -2458,8 +2461,8 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?-zid8f2");
-  src: url("../fonts/icomoon/icomoon.eot?#iefix-zid8f2") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?-zid8f2") format("truetype"), url("../fonts/icomoon/icomoon.woff?-zid8f2") format("woff"), url("../fonts/icomoon/icomoon.svg?-zid8f2#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?-6e618l");
+  src: url("../fonts/icomoon/icomoon.eot?#iefix-6e618l") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?-6e618l") format("truetype"), url("../fonts/icomoon/icomoon.woff?-6e618l") format("woff"), url("../fonts/icomoon/icomoon.svg?-6e618l#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2482,6 +2485,38 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 
 .icon-x:before {
   content: "\e609";
+}
+
+.icon-tumblr-square:before {
+  content: "\e60a";
+}
+
+.icon-tumblr:before {
+  content: "\e60b";
+}
+
+.icon-facebook-square:before {
+  content: "\e60c";
+}
+
+.icon-facebook:before {
+  content: "\e60d";
+}
+
+.icon-twitter-square:before {
+  content: "\e60e";
+}
+
+.icon-twitter:before {
+  content: "\e60f";
+}
+
+.icon-github:before {
+  content: "\e610";
+}
+
+.icon-github-square:before {
+  content: "\e611";
 }
 
 .icon-chevron-circle-down:before {
@@ -2587,6 +2622,13 @@ body {
 
 .masthead-nav {
   background: #555;
+}
+.masthead-nav .masthead-social {
+  color: #aaa;
+  float: right;
+  font-size: 110%;
+  font-weight: lighter;
+  text-transform: none;
 }
 
 .masthead-nav-logo {
