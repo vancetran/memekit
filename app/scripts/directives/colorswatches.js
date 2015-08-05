@@ -11,8 +11,6 @@ angular.module('memekit')
     return {
       //require: '?ngModel',
       template: '<div>'+
-      '<label for="filleditor-{{element.name}}">Fill Color</label>'+
-      '<input id="filleditor-{{element.name}}" type="text" ng-init="element.fill = element.fill()" ng-model="element.fill" ng-if="field == \'picker\'" class="form-control" />'+
       '<ul>'+
       '<li style="background-color: {{ color }}" ng-click="changeColor(color)" ng-repeat="color in swatch">'+
       '</li>' +
