@@ -58,9 +58,9 @@ var app = angular.module('memekit')
           {
             name: 'Headline',
             type: 'text',
-            text: 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the color of the text too.',
+            text: 'Edit this text, and drag it around.\nYou can upload your own background image,\nlogo, and change the color of the text too.',
             // text: function() {
-            //   return $scope.theme.headlineText || 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the color of the text too.';
+            //   return $scope.theme.headlineText || 'Edit this text, and drag it around.\nYou can upload your own background image,\nlogo, and change the color of the text too.';
             // },
             fill: function() {
               return $scope.theme.headline;
@@ -72,7 +72,7 @@ var app = angular.module('memekit')
             textAnchor: 'start',
             x: 30,
             y: function(){
-              return $scope.size.height - 130;
+              return $scope.size.height - 95;
             },
             draggable: true,
             collapsed: false,
