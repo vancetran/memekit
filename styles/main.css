@@ -2516,6 +2516,71 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
   content: "\e601";
 }
 
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-Book.eot");
+  src: url("../fonts/kievit/KievitWebPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-Bold.eot");
+  src: url("../fonts/kievit/KievitWebPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-Xbold.eot");
+  src: url("../fonts/kievit/KievitWebPro-Xbold.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-Xbold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-Black.eot");
+  src: url("../fonts/kievit/KievitWebPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-Black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-Ita.eot");
+  src: url("../fonts/kievit/KievitWebPro-Ita.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-Ita.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-BoldIta.eot");
+  src: url("../fonts/kievit/KievitWebPro-BoldIta.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-BoldIta.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-XboldIta.eot");
+  src: url("../fonts/kievit/KievitWebPro-XboldIta.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-XboldIta.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Kievit;
+  src: url("../fonts/kievit/KievitWebPro-BlackIta.eot");
+  src: url("../fonts/kievit/KievitWebPro-BlackIta.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit/KievitWebPro-BlackIta.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+.noselect, #main {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   font-size: 11pt;
 }
@@ -2549,6 +2614,7 @@ body {
   height: 90%;
 }
 #main .preview h3 {
+  cursor: default;
   margin-bottom: 10px;
 }
 #main .preview h3 small {
@@ -2572,6 +2638,7 @@ body {
 }
 #main .controls {
   float: right;
+  padding-bottom: 100px !important;
 }
 #main .controls .icon-caret-down, #main .controls .icon-caret-right {
   margin-right: 10px;
@@ -2593,6 +2660,7 @@ body {
   color: #fff;
 }
 #main .controls .content-form .panel {
+  clear: both;
   border-top: 2px solid #ddd;
 }
 #main .controls .content-form .panel h3 {
@@ -2602,9 +2670,13 @@ body {
   -webkit-transition: background-color 0.25s;
           transition: background-color 0.25s;
   cursor: pointer;
+  clear: both;
 }
 #main .controls .content-form .panel h3:hover {
   background-color: #ddd;
+}
+#main .controls .content-form .panel label {
+  clear: both;
 }
 #main .pure-button, #main button.button-primary, #main button, #main .fileInputWrapper {
   border-radius: 5px;
@@ -2667,4 +2739,34 @@ body {
 
 #svg *[draggable="true"], #snap-svg *[draggable="true"] {
   cursor: move;
+}
+
+.color-swatches ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: -20px 0 20px 0;
+  clear: both;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.color-swatches ul li {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 9.09%;
+  height: 27.68px;
+  float: left;
+  z-index: 1;
+}
+.color-swatches ul li:hover {
+  position: relative;
+  z-index: 10;
+  outline: 2px solid red;
+}
+
+.fill-editor input {
+  float: left;
+  text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
 }
