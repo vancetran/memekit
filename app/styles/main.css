@@ -2748,9 +2748,16 @@ body {
   float: left;
 }
 .color-swatches ul li {
+  position: relative;
   cursor: pointer;
   display: block;
-  width: 10%;
-  height: 30px;
+  width: 9.09%;
+  height: 27.68px;
   float: left;
+  z-index: 1;
+}
+.color-swatches ul li:hover {
+  position: relative;
+  z-index: 10;
+  outline: 2px solid red;
 }
