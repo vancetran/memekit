@@ -2638,6 +2638,7 @@ body {
 }
 #main .controls {
   float: right;
+  padding-bottom: 100px !important;
 }
 #main .controls .icon-caret-down, #main .controls .icon-caret-right {
   margin-right: 10px;
@@ -2668,9 +2669,13 @@ body {
   -webkit-transition: background-color 0.25s;
           transition: background-color 0.25s;
   cursor: pointer;
+  clear: both;
 }
 #main .controls .content-form .panel h3:hover {
   background-color: #ddd;
+}
+#main .controls .content-form .panel label {
+  clear: both;
 }
 #main .pure-button, #main button.button-primary, #main button, #main .fileInputWrapper {
   border-radius: 5px;
@@ -2733,4 +2738,34 @@ body {
 
 #svg *[draggable="true"], #snap-svg *[draggable="true"] {
   cursor: move;
+}
+
+.color-swatches ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: -10px 0 20px 0;
+  clear: both;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.color-swatches ul li {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 9.09%;
+  height: 27.68px;
+  float: left;
+  z-index: 1;
+}
+.color-swatches ul li:hover {
+  position: relative;
+  z-index: 10;
+  outline: 2px solid red;
+}
+
+.fill-editor input {
+  float: left;
+  text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
 }
