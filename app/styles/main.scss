@@ -130,6 +130,9 @@ body {
             background-color: #ddd;
           }
         }
+        label {
+          clear: both;
+        }
       }
     }
   }
@@ -240,5 +243,16 @@ body {
         outline: 2px solid red;
       }
     }
+  }
+}
+
+.fill-editor {
+  input {
+    float: left;
+    text-shadow:
+   -1px -1px 1px #fff,
+    1px -1px 1px #fff,
+    -1px 1px 1px #fff,
+     1px 1px 1px #fff;
   }
 }

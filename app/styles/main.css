@@ -2674,6 +2674,9 @@ body {
 #main .controls .content-form .panel h3:hover {
   background-color: #ddd;
 }
+#main .controls .content-form .panel label {
+  clear: both;
+}
 #main .pure-button, #main button.button-primary, #main button, #main .fileInputWrapper {
   border-radius: 5px;
 }
@@ -2760,4 +2763,9 @@ body {
   position: relative;
   z-index: 10;
   outline: 2px solid red;
+}
+
+.fill-editor input {
+  float: left;
+  text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
 }
