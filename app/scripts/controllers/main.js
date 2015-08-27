@@ -66,6 +66,7 @@ var app = angular.module('memekit')
               return $scope.theme.headline;
             },
             fontSize: 26,
+            fontWeight: 'normal',
             fontFamily: function() {
               return $scope.theme.headlineFont;
             },
@@ -86,6 +87,10 @@ var app = angular.module('memekit')
                 'Large (32px)': 32,
                 'Extra Large (40px)': 40,
                 'Jumbo (72px)': 72,
+              },
+              fontWeight: {
+                'Normal': 'normal',
+                'Bold': 'bold'
               },
             },
           },
