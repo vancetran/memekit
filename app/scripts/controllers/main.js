@@ -26,16 +26,19 @@ var app = angular.module('memekit')
           name: 'Twitter',
           width: 650,
           height: 320,
+          logoWidth: 125
         },
         {
           name: 'Instagram',
           width: 640,
           height: 640,
+          logoWidth: 125
         },
         {
           name: 'Video',
           width: 640,
           height: 360,
+          logoWidth: 100
         },
       ],
       themes: themeConfig,
@@ -169,9 +172,11 @@ var app = angular.module('memekit')
           {
             name: 'Logo',
             type: 'image',
-            width: 150,
+            width: function() {
+              return $scope.size.logoWidth || 150;
+            },
             height: function() {
-              return this.width;
+              return this.width();
             },
             src: function() {
               return $scope.theme.logoSrc;
