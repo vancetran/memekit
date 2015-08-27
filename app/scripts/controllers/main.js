@@ -13,7 +13,7 @@
 
 
 var app = angular.module('memekit')
-  .controller('MainCtrl', function ($scope, saveSvgAsPng, themeConfig) {
+  .controller('MainCtrl', function ($scope, saveSvgAsPng, themeConfig, util) {
 
     $scope.config = {
       sizes: [
