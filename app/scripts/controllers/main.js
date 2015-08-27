@@ -93,6 +93,33 @@ var app = angular.module('memekit')
             },
           },
           {
+            name: 'Image',
+            type: 'image',
+            width: 600,
+            height: function() {
+              return this.width;
+            },
+            src: '',
+            opacity: 1,
+            x: '0%',
+            y: '0%',
+            preserveAspectRatio: 'xMinYMin meet',
+            collapsed: false,
+            draggable: true,
+            defaultFilter: '',
+            editable: {
+              src: true,
+              width: true,
+              opacity: true,
+              filters: [
+                'Sepia',
+                'Grayscale',
+                'Invert',
+                'Blur'
+              ],
+            }
+          },
+          {
             name: 'Credit',
             type: 'text',
             text: 'Credit: Insert name here',
@@ -140,33 +167,6 @@ var app = angular.module('memekit')
             collapsed: true,
             editable: {
               fill: 'picker'
-            }
-          },
-          {
-            name: 'Image',
-            type: 'image',
-            width: 600,
-            height: function() {
-              return this.width;
-            },
-            src: '',
-            opacity: 1,
-            x: '0%',
-            y: '0%',
-            preserveAspectRatio: 'xMinYMin meet',
-            collapsed: true,
-            draggable: true,
-            defaultFilter: '',
-            editable: {
-              src: true,
-              width: true,
-              opacity: true,
-              filters: [
-                'Sepia',
-                'Grayscale',
-                'Invert',
-                'Blur'
-              ],
             }
           },
           {

@@ -361,10 +361,18 @@ angular.module('memekit')
             "#snap-svg text[name=Headline]");
           var credit = document.querySelector(
             "#snap-svg text[name=Credit]");
+          var image = document.querySelector(
+            "#snap-svg image[name=Image]");
+          var logo = document.querySelector(
+            "#snap-svg image[name=Logo]");
+          document.getElementById('snap-svg')
+            .appendChild(image);
           document.getElementById('snap-svg')
             .appendChild(headline);
           document.getElementById('snap-svg')
             .appendChild(credit);
+          document.getElementById('snap-svg')
+            .appendChild(logo);
         };
 
         // Watch for changes on the scope and the theme, and redraw
