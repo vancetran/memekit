@@ -368,11 +368,11 @@ angular.module('memekit')
           document.getElementById('snap-svg')
             .appendChild(image);
           document.getElementById('snap-svg')
-            .appendChild(headline);
+            .appendChild(logo);
           document.getElementById('snap-svg')
             .appendChild(credit);
           document.getElementById('snap-svg')
-            .appendChild(logo);
+            .appendChild(headline);
         };
 
         // Watch for changes on the scope and the theme, and redraw
