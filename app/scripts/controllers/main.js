@@ -48,6 +48,7 @@ var app = angular.module('memekit')
       svg: {
         canvas: {
           height: function() {
+            console.log(sillyAlign);
             return $scope.size.height;
           },
           width: function() {
@@ -65,8 +66,12 @@ var app = angular.module('memekit')
             fill: function() {
               return $scope.theme.headline;
             },
-            fontSize: 26,
-            fontWeight: 'normal',
+            fontSize: function() {
+              return $scope.theme.headlineFontSize || 26;
+            },
+            fontWeight: function() {
+              return $scope.theme.headlineFontWeight || 'normal';
+            },
             fontFamily: function() {
               return $scope.theme.headlineFont;
             },
