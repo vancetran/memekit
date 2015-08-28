@@ -76,9 +76,20 @@ var app = angular.module('memekit')
               return $scope.theme.headlineFont;
             },
             textAnchor: 'start',
-            x: 30,
+            x: function(){
+              var x;
+              if($scope.theme.headlinePosition){
+                x = $scope.theme.headlinePosition[0];
+              }
+
+              return x || 30;
+            },
             y: function(){
-              return $scope.size.height - 95;
+              var y;
+              if($scope.theme.headlinePosition){
+                y = $scope.theme.headlinePosition[1];
+              }
+              return y || ($scope.size.height - 95);
             },
             draggable: true,
             collapsed: false,
@@ -187,8 +198,20 @@ var app = angular.module('memekit')
               return $scope.theme.logoSrc;
             },
             opacity: 1,
-            x: 30,
-            y: 30,
+            x: function(){
+              var x;
+              if($scope.theme.logoPosition){
+                x = $scope.theme.logoPosition[0];
+              }
+              return x || 30;
+            },
+            y: function(){
+              var y;
+              if($scope.theme.logoPosition){
+                y = $scope.theme.logoPosition[1];
+              }
+              return y || 30;
+            },
             preserveAspectRatio: 'xMinYMin meet',
             editable: {
               src: true,
