@@ -7,7 +7,7 @@
  * # snapSvg
 */
 angular.module('memekit')
-  .directive('snapSvg', function(snapSVG) {
+  .directive('snapSvg', function(snapSVG, util) {
     return {
       template: '<svg id="snap-svg"></svg>',
       restrict: 'E',

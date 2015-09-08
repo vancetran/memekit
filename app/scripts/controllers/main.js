@@ -38,6 +38,26 @@ var app = angular.module('memekit')
           height: 360
         },
       ],
+      alignment: {
+        margin: 30,
+        top: function() {
+          //console.log($scope.size.height);
+          //console.log([$scope.alignment.margin,$scope.alignment.margin]);
+          return [$scope.alignment.margin,$scope.alignment.margin];
+        },
+        right: function() {
+          // console.log($scope.size.height);
+          // return $scope.size.height;
+        },
+        bottom: function() {
+          // console.log($scope.size.height);
+          // return $scope.size.height;
+        },
+        left: function() {
+          // console.log($scope.size.height);
+          // return $scope.size.height;
+        }
+      },
       themes: themeConfig,
       output: {
         scale: 2,
@@ -48,10 +68,11 @@ var app = angular.module('memekit')
       svg: {
         canvas: {
           height: function() {
-            console.log(sillyAlign);
+            // console.log($scope.size.height);
             return $scope.size.height;
           },
           width: function() {
+            // console.log($scope.size.width);
             return $scope.size.width;
           },
         },
@@ -180,6 +201,7 @@ var app = angular.module('memekit')
               return $scope.size.width;
             },
             fill: function() {
+              // console.log($scope.theme.background);
               return $scope.theme.background;
             },
             collapsed: true,
@@ -253,6 +275,7 @@ var app = angular.module('memekit')
     $scope.$watch('size', function() {
       $scope.$broadcast('changeSize');
       createConfigCopy();
+      //console.log("size changed");
     });
 
     $scope.resetSvg = function() {

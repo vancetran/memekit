@@ -35,20 +35,5 @@ var app = angular.module('memekit')
     // Turn it off - remove the function entirely
     // window.onbeforeunload = null;
 
-    var sillyAlign = {
-      top: 30,
-      bottom: 120,
-      left: 123,
-      right: 123
-    }
-
-    $window.sillyAlign = sillyAlign;
-
-    var alignmentNames = function(){
-
-    }
-
-    return $window.sillyAlign;
-
   });
 })();
