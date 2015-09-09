@@ -14,7 +14,7 @@ var app = angular.module('memekit')
   .provider('themeConfigProvider', function () {
   	return {
   	  $get: function($http, $q) {
-  			var defaultConfig = $http.get('themes.config.json').catch(function(err) {
+  			var defaultConfig = $http.get('themes-uc.config.json').catch(function(err) {
   				if(err.status === 404) {
   					return [];
   				}

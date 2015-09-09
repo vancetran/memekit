@@ -41,8 +41,8 @@ var app = angular.module('memekit')
       alignment: {
         margin: 30,
         top: function() {
-          //console.log($scope.size.height);
-          //console.log([$scope.alignment.margin,$scope.alignment.margin]);
+          console.log($scope.size.height);
+          console.log([$scope.alignment.margin,$scope.alignment.margin]);
           return [$scope.alignment.margin,$scope.alignment.margin];
         },
         right: function() {
@@ -68,11 +68,11 @@ var app = angular.module('memekit')
       svg: {
         canvas: {
           height: function() {
-            // console.log($scope.size.height);
+            console.log("Canvas height: " + $scope.size.height);
             return $scope.size.height;
           },
           width: function() {
-            // console.log($scope.size.width);
+            console.log("Canvas width: " + $scope.size.width);
             return $scope.size.width;
           },
         },
@@ -275,7 +275,9 @@ var app = angular.module('memekit')
     $scope.$watch('size', function() {
       $scope.$broadcast('changeSize');
       createConfigCopy();
-      //console.log("size changed");
+      console.log("size changed");
+      console.log($scope.config.alignment.top());
+      console.log($scope.config.alignment.margin);
     });
 
     $scope.resetSvg = function() {
