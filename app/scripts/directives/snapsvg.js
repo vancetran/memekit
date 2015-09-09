@@ -353,6 +353,9 @@ angular.module('memekit')
           angular.forEach(els, function(e, i) {
             e.transform('');
           });
+
+          console.log("===What does the config look like inside snapsvg.js?");
+          console.log(scope.svgConfig);
         }
 
         // moves Headline and Credit SVG elements to the bottom of SVG, so they'll show up on top of the z-index pile
