@@ -1,6 +1,6 @@
 {
   "name": "meme",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An elegant meme tool for a more civilized age.",
   "main": "server.js",
   "scripts": {
