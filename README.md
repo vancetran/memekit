@@ -1,10 +1,10 @@
 # MemeKit
 
-v. 1.0.0
+v2.0.0 (dev)
 
 *An elegant meme tool for a more civilized age.*
 
-This is an effort to rebuild [Meme-Gen](https://github.com/vancetran/meme-gen) to be more modular and themeable. Also, it's a great ~~excuse~~ opportunity to learn Angular and Snap.svg.
+This is an effort to rebuild [Meme-Gen](https://github.com/vancetran/meme-gen) to be more modular and themeable.
 
 I'm developing in the open, so please mind the dust. Production builds are in the `gh-pages` branch and the [demo can be seen here](http://vancetran.github.io/memekit).
 
