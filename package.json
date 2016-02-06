@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "memekit",
   "version": "2.0.0",
   "description": "v. 1.0.0",
+=======
+  "name": "meme",
+  "version": "0.0.1",
+  "description": "An elegant meme tool for a more civilized age.",
+>>>>>>> parent of 82fb408... version marker
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
