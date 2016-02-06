@@ -1,7 +1,7 @@
 {
-  "name": "meme",
-  "version": "1.0.0",
-  "description": "An elegant meme tool for a more civilized age.",
+  "name": "memekit",
+  "version": "2.0.0",
+  "description": "v. 1.0.0",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,37 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vancetran/meme.git"
+    "url": "git+https://github.com/vancetran/memekit.git"
   },
-  "keywords": [
-    "meme",
-    "generator"
-  ],
-  "author": "Vance Tran",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vancetran/meme/issues"
+    "url": "https://github.com/vancetran/memekit/issues"
   },
-  "homepage": "https://github.com/vancetran/meme#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "del": "^1.2.0",
-    "express": "^4.12.4",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.3.0",
-    "gulp-cache": "^0.2.9",
-    "gulp-concat": "^2.5.2",
-    "gulp-gh-pages": "^0.5.1",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-jshint": "^1.11.0",
-    "gulp-livereload": "^3.8.0",
-    "gulp-minify-css": "^1.1.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^1.0.5",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0",
-    "gulp-useref": "^1.1.2",
-    "open": "0.0.5"
-  }
+  "homepage": "https://github.com/vancetran/memekit#readme"
 }
