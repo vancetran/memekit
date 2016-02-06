@@ -1,0 +1,276 @@
+@import "pure/base";
+@import "pure/grids";
+@import "pure/grids-responsive";
+@import "pure/forms";
+@import "pure/buttons";
+@import "pure/menus";
+@import "fonts";
+@import "utils";
+
+body {
+  font-size: 11pt;
+}
+
+.masthead {}
+.masthead-nav {
+  @extend .pure-menu;
+  @extend .pure-menu-horizontal;
+  background: #555;
+
+  .masthead-social {
+    @extend .pure-menu-heading;
+    color: #aaa;
+    float:right;
+    font-size: 110%;
+    font-weight: lighter;
+    text-transform: none;
+  }
+}
+.masthead-nav-logo {
+  @extend .pure-menu-heading;
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+  text-transform: none;
+}
+
+#main {
+  @extend .pure-g;
+  @extend .noselect;
+  display: block;
+  max-width: 980px;
+  margin: 0 auto;
+  .preview {
+    @extend .pure-u-1;
+    @extend .pure-u-md-2-3;
+    @extend .l-box;
+
+
+	  max-width: 631px;
+
+    snap-svg {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &.fixed {
+  		position: fixed;
+  		top: 20px;
+  		height: 90%;
+  	}
+
+    .content-form {
+      @extend .pure-form;
+      @extend .pure-form-stacked;
+    }
+
+    h3 {
+      cursor: default;
+      small {
+        font-weight: normal;
+        color: #AAA;
+      }
+      margin-bottom: 10px;
+    }
+
+    .button-danger {
+      background-color: #d66;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 828px) {
+  		width: 100%;
+  		max-width: 100%;
+
+  		&.fixed {
+  			position: relative;
+  			top: auto;
+  			height: auto;
+  		}
+  	}
+  }
+
+  .controls {
+    @extend .pure-u-1;
+    @extend .pure-u-md-1-3;
+    @extend .l-box;
+    float: right;
+    padding-bottom: 100px !important;
+
+    .icon-caret-down, .icon-caret-right {
+      margin-right: 10px;
+      float: right;
+    }
+
+    .content-form {
+      @extend .pure-form;
+      @extend .pure-form-stacked;
+
+      textarea{
+        width: 100%;
+        height: 75px;
+        resize: none;
+      }
+      input{
+        width: 100%;
+      }
+
+      input.form-control, textarea, button, select {
+        margin-bottom: 20px;
+      }
+
+      .button-danger {
+        background-color: #d66;
+        color: #fff;
+      }
+
+      .panel {
+        clear: both;
+        border-top: 2px solid #ddd;
+
+        h3 {
+          background: #eee;
+          padding: .5em;
+          margin: 0;
+          transition: background-color 0.25s;
+          cursor: pointer;
+          clear: both;
+
+          &:hover {
+            background-color: #ddd;
+          }
+        }
+        label {
+          clear: both;
+        }
+      }
+    }
+  }
+
+  .pure-button {
+    border-radius: 5px;
+  }
+
+  button.button-primary {
+    @extend .pure-button;
+    @extend .pure-button-primary;
+  }
+  button {
+    @extend .pure-button;
+  }
+  button.button-reset {
+    float: right;
+  }
+  .dropzone {
+    border: 2px dashed #ddd;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: 0 0 10px;
+    box-sizing: border-box;
+
+    &:before {
+      content: 'Drop your image here';
+      color: #ddd;
+      font-size: 1.75em;
+      position: absolute;
+      top: 10px; left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    &.drag-over-accept {
+      background: #eaeaea;
+    }
+  }
+
+  .fileInputWrapper {
+    @extend .pure-button;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		margin: 50px auto 10px;
+		width: 50%;
+		text-align: center;
+		cursor: pointer;
+
+		input {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			cursor: pointer;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			width: 100%;
+		}
+	}
+}
+
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.l-box {
+  padding: .75em;
+}
+
+#svg, #snap-svg {
+  *[draggable="true"]{
+  	cursor: move;
+  }
+
+  image {
+  }
+}
+
+.color-swatches {
+  ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: -20px 0 20px 0;
+    clear: both;
+    width: 100%;
+    height: auto;
+    float: left;
+    li {
+      position: relative;
+      cursor: pointer;
+      display: block;
+      width: 9.09%;
+      height: 27.68px;
+      float: left;
+      z-index: 1;
+      &:hover {
+        position: relative;
+        z-index: 10;
+        outline: 2px solid red;
+      }
+    }
+  }
+}
+
+.fill-editor {
+  input {
+    float: left;
+    text-shadow:
+   -1px -1px 1px #fff,
+    1px -1px 1px #fff,
+    -1px 1px 1px #fff,
+     1px 1px 1px #fff;
+  }
+}
+
+.colorpicker {
+  .dropdown-menu {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25), -1px -1px 1px rgba(0,0,0,0.25);
+  }
+}
