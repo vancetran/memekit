@@ -1,3 +1,4 @@
+// Randomly generated people data: https://www.mockaroo.com/
 const people_data = [{
       "id": 1,
       "gender": "Male",
@@ -699,4 +700,5 @@ const people_data = [{
       "email": "mcunningham2r@census.gov",
       "ip_address": "118.140.142.230"
     }];
-export {people_data};
+
+export default people_data;
