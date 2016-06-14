@@ -1,3 +1,15 @@
-import Module1 from './module1.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('Hello World');
+import scratchpad from './scratchpad.js';
+
+class Layout extends React.Component {
+  render(){
+    return(
+      <h1>Howdy duder!</h1>
+    );
+  }
+}
+
+const app = document.getElementById('app');
+ReactDOM.render(<Layout />, app);
