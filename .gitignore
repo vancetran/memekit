@@ -12,9 +12,6 @@ app/fonts/kievit
 app/images/uc
 app/themes-uc.config.json
 
-*.sublime-project
-*.sublime-workspace
-
 # Mac OS X debris
 .DS_Store
 .AppleDouble
