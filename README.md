@@ -9,3 +9,10 @@ This is an effort to rebuild [Meme-Gen](https://github.com/vancetran/meme-gen) t
 I'm developing in the open, so please mind the dust. Production builds are in the `gh-pages` branch and the [demo can be seen here](http://vancetran.github.io/memekit).
 
 [More info for developers in the Wiki](https://github.com/vancetran/memekit/wiki)
+
+## Dev commands
+
+```sh
+npm run dev # Runs Webpack dev server at localhost:8081, watches for changes, and recompiles
+npm run prod # Builds an optimized js bundle
+```

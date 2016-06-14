@@ -1,15 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import scratchpad from './scratchpad.js';
+import Layout from './components/Layout'
 
-class Layout extends React.Component {
-  render(){
-    return(
-      <h1>Howdy duder!</h1>
-    );
-  }
-}
+// import scratchpad from './scratchpad.js';
+// import draw from './components/draw.js';
 
 const app = document.getElementById('app');
 ReactDOM.render(<Layout />, app);
