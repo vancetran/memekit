@@ -11,7 +11,7 @@ export default class Layout extends React.Component {
 
   render(){
     return(
-      <p>Maths: {this.maths(23,78)} – Constructor thing: {this.name}!</p>
+      <h1>Maths: {this.maths(23,78)} – Constructor thing: {this.name}!</h1>
     );
   }
 }
